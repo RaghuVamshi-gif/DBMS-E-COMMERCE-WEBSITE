@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Customers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Shop</a>
+    <div>
+      <a class="btn btn-outline-light me-2" href="customers.html">Customers</a>
+      <a class="btn btn-outline-light me-2" href="orders.html">Orders</a>
+      <a class="btn btn-outline-light" href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4">
+  <h1>Customers</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <h4>Add / Edit Customer</h4>
+      <input id="cust-id" type="hidden">
+      <input id="cust-name" class="form-control mb-2" placeholder="Name">
+      <input id="cust-email" class="form-control mb-2" placeholder="Email">
+      <input id="cust-phone" class="form-control mb-2" placeholder="Phone">
+      <input id="cust-address" class="form-control mb-2" placeholder="Address">
+      <button id="save-cust" class="btn btn-primary">Save</button>
+      <button id="clear-form" class="btn btn-secondary ms-2">Clear</button>
+    </div>
+    <div class="col-md-7">
+      <h4>List</h4>
+      <table class="table table-striped" id="customers-table">
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Address</th><th>Action</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

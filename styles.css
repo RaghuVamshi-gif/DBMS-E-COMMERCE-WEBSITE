@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #222;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+h1 {
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product {
+  width: 220px;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px gray;
+}
+
+.product h3 {
+  margin: 0;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+button {
+  background: #0088ff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #006fe0;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+body { background:#f8f9fa; }
+.product-card { box-shadow: 0 2px 6px rgba(0,0,0,.08); border-radius:6px; padding:15px; background:white; }
+#product-list .col { margin-bottom:20px; }
+.place-btn {
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
